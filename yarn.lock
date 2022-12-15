@@ -4533,11 +4533,6 @@
   dependencies:
     "@react-hookz/deep-equal" "^1.0.3"
 
-"@remix-run/router@1.0.5":
-  version "1.0.5"
-  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@remix-run/router/-/router-1.0.5.tgz#d5c65626add4c3c185a89aa5bd38b1e42daec075"
-  integrity sha512-my0Mycd+jruq/1lQuO5LBB6WTlL/e8DTCYWp44DfMTDcXz8DcTlgF0ISaLsGewt+ctHN+yA8xMq3q/N7uWJPug==
-
 "@rjsf/core-v5@npm:@rjsf/core@^5.0.0-beta.12":
   version "5.0.0-beta.14"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@rjsf/core/-/core-5.0.0-beta.14.tgz#8c247022ac5a84d12704c9f587126049a32289b5"
@@ -5499,7 +5494,7 @@
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@types/range-parser/-/range-parser-1.2.4.tgz#cd667bcfdd025213aafb7ca5915a932590acdcdc"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
-"@types/react-dom@*", "@types/react-dom@<18.0.0":
+"@types/react-dom@*", "@types/react-dom@<18.0.0", "@types/react-dom@^17":
   version "17.0.18"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@types/react-dom/-/react-dom-17.0.18.tgz#8f7af38f5d9b42f79162eea7492e5a1caff70dc2"
   integrity sha512-rLVtIfbwyur2iFKykP2w0pl/1unw26b5td16d5xMgp7/yjTHomkyxPYChFoCr/FtEX1lN9wY6lFj1qvKdS5kDw==
@@ -6255,11 +6250,12 @@ anymatch@^3.0.3, anymatch@~3.1.2:
     "@backstage/theme" "^0.2.16"
     "@material-ui/core" "^4.12.2"
     "@material-ui/icons" "^4.9.1"
+    backstage-plugin-techdocs-addon-mermaid "^0.4.2"
     history "^5.0.0"
     react "^17.0.2"
     react-dom "^17.0.2"
-    react-router "^6.3.0"
-    react-router-dom "^6.3.0"
+    react-router "6.0.0-beta.0"
+    react-router-dom "6.0.0-beta.0"
     react-use "^17.2.4"
 
 aproba@^1.0.3:
@@ -16767,27 +16763,12 @@ react-router-dom@6.0.0-beta.0:
     prop-types "^15.7.2"
     react-router "6.0.0-beta.0"
 
-react-router-dom@^6.3.0:
-  version "6.4.5"
-  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/react-router-dom/-/react-router-dom-6.4.5.tgz#4fdb12efef4f3848c693a76afbeaed1f6ca02047"
-  integrity sha512-a7HsgikBR0wNfroBHcZUCd9+mLRqZS8R5U1Z1mzLWxFXEkUT3vR1XXmSIVoVpxVX8Bar0nQYYYc9Yipq8dWwAA==
-  dependencies:
-    "@remix-run/router" "1.0.5"
-    react-router "6.4.5"
-
 react-router@6.0.0-beta.0:
   version "6.0.0-beta.0"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/react-router/-/react-router-6.0.0-beta.0.tgz#3e11f39b6ded4412c2fed9e4f989dd4c8156724d"
   integrity sha512-VgMdfpVcmFQki/LZuLh8E/MNACekDetz4xqft+a6fBZvvJnVqKbLqebF7hyoawGrV1HcO5tVaUang2Og4W2j1Q==
   dependencies:
     prop-types "^15.7.2"
-
-react-router@6.4.5, react-router@^6.3.0:
-  version "6.4.5"
-  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/react-router/-/react-router-6.4.5.tgz#73f382af2c8b9a86d74e761a7c5fc3ce7cb0024d"
-  integrity sha512-1RQJ8bM70YEumHIlNUYc6mFfUDoWa5EgPDenK/fq0bxD8DYpQUi/S6Zoft+9DBrh2xmtg92N5HMAJgGWDhKJ5Q==
-  dependencies:
-    "@remix-run/router" "1.0.5"
 
 react-side-effect@^2.1.0:
   version "2.1.2"
