@@ -1,5 +1,7 @@
 # [Backstage](https://backstage.io)
 
+We run with `yarn dev` and add this component to the catalog, then view its docs:
+https://github.com/realandersn/backstage-docs-test/blob/master/component-info.yaml
 
 # Version info
 
