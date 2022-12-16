@@ -3,12 +3,30 @@ import {
   AuthorizeResult,
   PolicyDecision,
 } from '@backstage/plugin-permission-common';
-import { PermissionPolicy } from '@backstage/plugin-permission-node';
+import {
+  PermissionPolicy,
+  PolicyQuery,
+} from '@backstage/plugin-permission-node';
 import { Router } from 'express';
 import { PluginEnvironment } from '../types';
+import { BackstageIdentityResponse } from '@backstage/plugin-auth-node';
 
 class TestPermissionPolicy implements PermissionPolicy {
-  async handle(): Promise<PolicyDecision> {
+  n = 0;
+  async handle(
+    request: PolicyQuery,
+    user?: BackstageIdentityResponse,
+  ): Promise<PolicyDecision> {
+    console.log({ request: JSON.stringify(request), user, n: this.n });
+    if (this.n < 20) {
+      console.log('Deny!');
+      return {
+        result: AuthorizeResult.DENY,
+      };
+    }
+    this.n++;
+
+    console.log('Allow!');
     return { result: AuthorizeResult.ALLOW };
   }
 }
